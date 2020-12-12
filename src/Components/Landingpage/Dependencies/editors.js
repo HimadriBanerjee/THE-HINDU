@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function Editors() {
+export const Editors = (props) => {
   return (
     <div>
       <section id="editors" className="editors">
@@ -13,6 +13,7 @@ export function Editors() {
               <div className="info-box">
                 <i className="bx bx-map" />
                 <h3>S Iyer</h3>
+              <p>{props.content.address}</p>
                 <p> (1878–1898)</p>
               </div>
             </div>
@@ -30,8 +31,8 @@ export function Editors() {
                 <h3> (1905–1923)</h3>
               </div>
             </div>
-            </div>
           </div>
+        </div>
       </section>
     </div>
   )

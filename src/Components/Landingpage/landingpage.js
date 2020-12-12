@@ -20,7 +20,7 @@ let aboutContent = {
   string_5: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque"
 };
 
-let contactContent = {
+let editorsContent = {
 
   address: "13/2 Action Area III, Kolkata 700028, India",
   email_1: "hotelfix@hotelfix.com",
@@ -32,7 +32,7 @@ let contactContent = {
 function LandingPage() {
   return (
     <React.Fragment>
-      <Editors slideName="NEWSMAKER" />
+      <Editors content={editorsContent} />
       <About content={aboutContent} />
 
      
